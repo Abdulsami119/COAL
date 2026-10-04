@@ -37,6 +37,8 @@ MOV AX, SI      ; AX gets the VALUE of SI
 MOV AL, [SI]    ; AL gets the VALUE stored at the ADDRESS in SI, gets array[0]
 MOV AL, [SI+1]  ; 1 byte forward, gets array[1]
 
+CMP AX, BX ;Perfoms AX-BX but do not store anywhere, it can change the flag eg zeroflag. CMP used to compare
+
 
 MOV AH, 4CH
 INT 21H
