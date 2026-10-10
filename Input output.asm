@@ -30,8 +30,8 @@ MOV AH, 01H
 INT 21H
 
 ; Check if user pressed Enter
-CMP AL, 13
-JE stringDone
+CMP AL, 13 ;when 13 means 'Enter' is pressed
+JE stringDone                  
 
 ; Store the character in input
 MOV [SI], AL
@@ -81,4 +81,4 @@ MOV AH, 4CH
 INT 21H
 
 MAIN ENDP
-END MAINMAIN
+END MAIN
