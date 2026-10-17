@@ -1,0 +1,15 @@
+ORG 100h
+
+MOV AL, 0Fh
+NOT AL
+
+MOV AL, 5
+NEG AL
+
+MOV AL, 0
+NEG AL
+
+MOV AL, 80h
+NEG AL
+
+HLT

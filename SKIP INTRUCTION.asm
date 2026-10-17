@@ -1,0 +1,19 @@
+ORG 100h
+
+MOV DL, 'A'
+MOV AH, 02h
+INT 21h
+
+JMP SKIP
+
+
+MOV DL, 'B'
+MOV AH, 02h
+INT 21h
+
+SKIP:
+
+MOV DL, 'C'
+MOV AH, 02h
+INT 21h
+HLT

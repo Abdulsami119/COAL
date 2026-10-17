@@ -1,0 +1,27 @@
+ORG 100h
+
+JMP START
+
+MOV AL, 5
+START:
+MOV AL, 10
+
+MOV AH, 0
+MOV BL, 10
+DIV BL    
+
+MOV CL, AH 
+
+ADD AL, 30h
+MOV DL, AL
+MOV AH, 02h
+INT 21h     
+
+
+MOV AL, CL
+ADD AL, 30h
+MOV DL, AL
+MOV AH, 02h
+INT 21h
+
+HLT
